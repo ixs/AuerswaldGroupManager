@@ -349,7 +349,7 @@ function _group_update($group, $extension, $direction, $state, $delay=false) {
 	$groups = get_groups_configuration();
 	$gid = $groups[$group]["id"];
 
-	$mb = get_group_members($gid)[$extension] or die("Extension not found...");
+	$mb = get_group_members($gid)[$extension] or die("Extension not found...\n");
 	$mbid = $mb["id"];
 
 	$data = array(

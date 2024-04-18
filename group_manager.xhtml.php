@@ -23,10 +23,20 @@ $group_cfg = get_groups_configuration();
 // Login/Logout actions
 if (array_key_exists("o", $_GET)) {
     $gnr = (int)$_GET["o"];
-    if (!$groups[$gnr]["going"]) {
+    // Special case, we want to log out of all groups
+    if ($gnr == "none") {
+        foreach ($groups as $gnr => $group) {
+            if ($group["going"]) {
+                logout_group($gnr, $ext, "going");
+            }
+        }
+    // Else iterate normaly and log into the specific group,
+    // which will automatically log out other groups.
+    } elseif (!$groups[$gnr]["going"]) {
         login_group($gnr, $ext, "going");
     }
     
+    // Handle incoming groups, multiple can be selected.
     foreach ($groups as $gnr => $group) {
         if (array_key_exists("i${gnr}", $_GET)) {
             if (!$group["coming"]) {
@@ -39,13 +49,11 @@ if (array_key_exists("o", $_GET)) {
         }
     }
     
-    // Update groups again
+    // Update groups again as they might have changed.
     $groups = get_groups_for_extension($ext);
 }
 
-
 ?>
-
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//OMA//DTD XHTML Mobile 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
