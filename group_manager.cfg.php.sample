@@ -1,0 +1,20 @@
+<?php
+/**
+ * Config File for the Auerswald GroupManager
+ */
+
+// PBX IP Address
+$auer_address = "192.168.0.240";
+
+// PBX User
+$auer_admin_user = "admin";
+
+// PBX Password
+$auer_admin_pass = "secret";
+
+// COMfortel WS-500x Base IP Address
+$ws_address = $ws_addresses = array(
+    "192.168.0.241",
+    "192.168.0.242", // For Testing
+);
+
