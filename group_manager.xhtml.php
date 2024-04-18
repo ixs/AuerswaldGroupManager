@@ -57,6 +57,10 @@ if (array_key_exists("o", $_GET)) {
   <form action="<?= $_SERVER["SCRIPT_NAME"] ?>" method="get">
    <p style="font-weight:bold"><?= lang("__gm_outgoing") ?></p>
 <?php
+// Always offer a no group option for outgoing calls to fall back to the handset defaults.
+$checked = !in_array(true, array_column($groups, 'going')) ? ' checked="checked"' : '';
+echo '   <p>Keine Gruppe <input type="radio" name="o" value="none"' . $checked . '/></p>'."\n";
+
 foreach ($groups as $gnr => $data) {
     $checked = $data['going'] === true ? ' checked="checked"' : '';
     echo "   <p>$data[name] <input type=\"radio\" name=\"o\" value=\"$gnr\"$checked/></p>\n";
