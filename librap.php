@@ -19,7 +19,7 @@ function rap_authenticate() {
 	global $ws_address;
 
 	// For now just do a simple client_ip check
-	if ($_SERVER["CLIENT_IP"] == $ws_address) {
+	if (in_array($_SERVER["REMOTE_ADDR"], $ws_address)) {
 		return true;
 	}
 

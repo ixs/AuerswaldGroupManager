@@ -14,7 +14,7 @@ The alternative is to use the ability to control the chosen line by using the ou
 login functionality. For this, the dial code `## 8 * 42 1 <Group> #` is used. [Reference](https://docs.auerswald.de/COMpact_5200_5500_R/Help_en_12/index.html#page/Buch1/gruppen_reference.html)  
 Short-Code Macros can help make this a little easier, but it is still not a good solution. [Reference](https://docs.auerswald.de/COMpact_5200_5500_R/Help_en_12/index.html#page/Buch1/kurzwahlmakros_verwaltung_reference.html)
 
-The COMfortel M-5x0 and the M-7x0 handsets however do support a feature called [Gigaset Remote Access Protocol](https://teamwork.gigaset.com/gigawiki/display/GPPPO/RAP+2.1) which is a small text-only "browser" for xhtml pages running on the handset using the [CAT-iq](https://en.wikipedia.org/wiki/CAT-iq) standard to communicate to the base station which does the actual http request.
+The COMfortel M-5x0 and the M-7x0 handsets however do support a feature called [Gigaset Remote Access Protocol](https://teamwork.gigaset.com/gigawiki/pages/viewpage.action?pageId=719192307) which is a small text-only "browser" for xhtml pages running on the handset using the [CAT-iq](https://en.wikipedia.org/wiki/CAT-iq) standard to communicate to the base station which does the actual http request.
 
 Using this feature, one can write simple applications such as a text-based interface to the PBX system allowing for management of groups log-in status, which is what the AuerswaldGroupManager does.
 
