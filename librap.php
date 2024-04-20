@@ -46,8 +46,6 @@ function rap_authenticate() {
 * @return array The handset information available.
 */
 function parse_rap_get() {
-	//lang=2&tz=0&mac=000952071D0A&cc=49&handsetid=035593B06E&sipid=720&provid=1
-
 	$rap_languages = array(
 		0 => "Undefined",
 		1 => "US",
