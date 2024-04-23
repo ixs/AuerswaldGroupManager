@@ -1,6 +1,6 @@
 # AuerswaldGroupManager
 
-![screenshot](https://github.com/ixs/AuerswaldGroupManager/assets/214768/d059553e-5b73-4794-85d7-17ca66c3dcca)
+<img src="https://github.com/ixs/AuerswaldGroupManager/assets/214768/d059553e-5b73-4794-85d7-17ca66c3dcca" width="20%" height="20%">
 
 ## Background
 
