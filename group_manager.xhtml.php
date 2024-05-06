@@ -67,7 +67,7 @@ if (array_key_exists("o", $_GET)) {
 <?php
 // Always offer a no group option for outgoing calls to fall back to the handset defaults.
 $checked = !in_array(true, array_column($groups, 'going')) ? ' checked="checked"' : '';
-echo '   <p>Keine Gruppe <input type="radio" name="o" value="none"' . $checked . '/></p>'."\n";
+echo '   <p>'.lang("__gm_nogroup").' <input type="radio" name="o" value="none"' . $checked . '/></p>'."\n";
 
 foreach ($groups as $gnr => $data) {
     $checked = $data['going'] === true ? ' checked="checked"' : '';
