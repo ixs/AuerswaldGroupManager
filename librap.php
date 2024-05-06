@@ -84,6 +84,7 @@ function lang($index) {
 	$words = array(
 		"US" => array(
 			"__gm_title" => "Groups",
+			"__gm_nogroup" => "No Group",
 			"__gm_available" => "Groups available",
 			"__gm_incoming" => "Incoming groups",
 			"__gm_outgoing" => "Outgoing group",
@@ -92,6 +93,7 @@ function lang($index) {
 		),
 		"German" => array(
 			"__gm_title" => "Gruppen",
+			"__gm_nogroup" => "Keine Gruppe",
 			"__gm_available" => "Verfügbare Gruppen",
 			"__gm_incoming" => "Kommende Gruppen",
 			"__gm_outgoing" => "Gehende Gruppe",
