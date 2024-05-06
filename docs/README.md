@@ -34,8 +34,7 @@ The AGM is a collection of php scripts, intended to run self-contained on a webs
 
 - Download the files
 - Rename `group_manager.cfg.php.sample` to `group_manager.cfg.php` and fill with your site specific configuration
-- Test using curl, e.g. `curl -H "User-Agent: Auerswald COMfortel WS-500M/V2.53.0+build.c0ed5a2;000952C0FFEE" "http://192.168.0.242/group_manager.xhtml.php?lang=2&tz=0![screenshot](https://github.com/ixs/AuerswaldGroupManager/assets/214768/cb625a41-fe8e-4578-a9a0-0807c0168b89)
-&mac=000952C0FFEE&cc=49&handsetid=0355C0FFEE&sipid=<sip_extension>&provid=1` to see that you're getting some xhtml return.
+- Test using curl, e.g. `curl -H "User-Agent: Auerswald COMfortel WS-500M/V2.53.0+build.c0ed5a2;000952C0FFEE" "http://192.168.0.242/group_manager.xhtml.php?lang=2&tz=0!&mac=000952C0FFEE&cc=49&handsetid=0355C0FFEE&sipid=<sip_extension>&provid=1` to see that you're getting some xhtml return.
 
 ## Base Station configuration
 
