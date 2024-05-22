@@ -12,8 +12,9 @@ $auer_admin_user = "admin";
 // PBX Password
 $auer_admin_pass = "secret";
 
-// COMfortel WS-500x Base IP Address
-$ws_address = $ws_addresses = array(
+// Access control to webinterface
+// COMfortel WS-500x Base IP Addresses
+$ws_addresses = array(
     "192.168.0.241",
     "192.168.0.242", // For Testing
 );
